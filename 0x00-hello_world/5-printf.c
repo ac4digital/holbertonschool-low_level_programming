@@ -15,7 +15,7 @@ int main(void)
 
 	/* Print Message */
 	
-	printf("%s\n",Message);
+	printf("%s",Message);
 
 	return (0);
 }
