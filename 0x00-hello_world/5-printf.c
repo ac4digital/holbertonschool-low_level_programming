@@ -10,10 +10,10 @@
 
 int main(void)
 {
-	// Variable Initialisation 
+	/* Variable Initialisation */ 
 	char Message[] = "with proper grammar, but the outcome is a piece of art,\n";
 
-	// Print Message
+	/* Print Message */
 	
 	printf("%s\n",Message);
 
