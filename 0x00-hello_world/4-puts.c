@@ -9,7 +9,7 @@
 int main(void)
 {
 	/* initialize var */
-	char MyQuote[] = "\"Programming is like building a multilingual puzzle\n";
+	char MyQuote[] = "\"Programming is like building a multilingual puzzle";
 	/* print the quote */
 	puts(MyQuote);
 
