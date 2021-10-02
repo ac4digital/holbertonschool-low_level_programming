@@ -17,10 +17,11 @@ int main(void)
 		if (letter != 'q' && letter != 'e')
 		{
 		putchar(letter);
-		putchar('\n');
 		}
 		letter++;
 	}
+
+	putchar('\n');
 
 	return (0);
 }
