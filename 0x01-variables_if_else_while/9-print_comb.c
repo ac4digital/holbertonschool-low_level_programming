@@ -18,7 +18,6 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		
 
 		single_digit++;
 
