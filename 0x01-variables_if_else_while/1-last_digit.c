@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - This program will asign a random number to the variable n each time it is executed.
+ * main - Program will asign a random number and prints the last digit.
  *
  * Return: 0 (Success)
  */
