@@ -11,14 +11,14 @@ int main(void)
 	int single_digit = 0;
 
 	do {
+		putchar(single_digit + '0');
+
 		if (single_digit < 9)
 		{
-			putchar(single_digit + '0');
 			putchar(',');
 			putchar(' ');
 		}
-		else
-			putchar(single_digit + '0');
+		
 
 		single_digit++;
 
