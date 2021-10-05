@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 
 /**
  * print_times_table - function prints the n times table
