@@ -15,13 +15,16 @@ int main(void)
 	first_number = 0;
 	second_number = 1;
 	result = 0;
+	counter = 0;
 
 	while (counter < 4000000)
 	{
 		counter = first_number + second_number;
 		first_number = second_number;
 		second_number = counter;
-		result = result + counter;
+
+		if (counter % 2 == 0)
+			result = result + counter;
 
 	}
 
