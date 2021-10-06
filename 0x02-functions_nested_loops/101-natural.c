@@ -14,7 +14,7 @@ int main(void)
 	{
 		if ((counter % 3) == 0 || (counter % 5) == 0)
 		{
-			result = counter;
+			result = result + counter;
 		}
 	}
 
