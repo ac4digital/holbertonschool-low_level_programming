@@ -1,9 +1,8 @@
 #include "main.h"
-#include <unistd.h>
 /**
  * _puts - function prints a string
  * @str: string
- * Return: not
+ * Return: nothing
  */
 void _puts(char *str)
 {
@@ -11,7 +10,7 @@ void _puts(char *str)
 
 	index = 0;
 
-	while (*(str + 1) != '\0')
+	while (str[index] != '\0')
 	{
 		_putchar(str[index]);
 		index++;
