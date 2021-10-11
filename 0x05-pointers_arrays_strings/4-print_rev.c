@@ -6,7 +6,7 @@
  */
 void print_rev(char *s)
 {
-	int index, length;
+	int index;
 
 	index = 0;
 
@@ -15,11 +15,9 @@ void print_rev(char *s)
 		index++;
 	}
 
-	length = index;
-
-	for (length = length - 1; length >= 0; length--)
+	for (index = index - 1; index >= 0; index--)
 	{
-		_putchar(s[length]);
+		_putchar(s[index]);
 	}
 	_putchar('\n');
 }
