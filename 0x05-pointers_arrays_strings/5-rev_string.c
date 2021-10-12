@@ -2,15 +2,15 @@
 /**
  * rev_string - function that reverses a string
  * @s: string
- * Return: 0 Success
+ * Return: nothing
  */
 void rev_string(char *s)
 {
 	int index, length;
-	char temporal[1000];
+	char temporal[500];
 
 	index = 0;
-	length = -1;
+	length = 0;
 
 	while (s[index] != '\0')
 	{
