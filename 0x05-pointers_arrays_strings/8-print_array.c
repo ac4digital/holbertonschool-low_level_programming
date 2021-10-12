@@ -4,8 +4,9 @@
  * print_array - function prints n elements of an array of integers
  * @a: array
  * @n: elements of the array
- * Return: elements
+ * Return: nothing
  */
+
 void print_array(int *a, int n)
 {
 	int index;
@@ -16,7 +17,7 @@ void print_array(int *a, int n)
 
 		if (index != n - 1)
 		{
-			printf(",");
+			printf(", ");
 		}
 	}
 	printf("\n");
