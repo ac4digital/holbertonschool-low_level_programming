@@ -10,17 +10,17 @@ void rev_string(char *s)
 	char temporal[500];
 
 	index = 0;
-	length = 0;
+	length = -1;
 
-	while (s[index] != '\0')
+	while (*(s + index))
 	{
-		temporal[index] = s[index];
+		*(temporal + index) = *(s + index);
 		length++;
 	}
 
 	for (index = 0; length >= 0; index++)
 	{
-		s[index] = temporal[length];
+		*(s + index) = *(temporal + length);
 		index++;
 		length--;
 	}
