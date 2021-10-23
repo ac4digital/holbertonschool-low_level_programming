@@ -21,8 +21,6 @@ int coins(int value)
 		var_coins = coins(value - 1) + 1;
 
 	return (var_coins);
-
-	/*return (10);*/
 }
 
 /**
