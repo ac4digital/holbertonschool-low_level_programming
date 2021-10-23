@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 
 	if (value < 0)
 	{
-		printf("%d 0\n", value);
+		printf("0\n");
 		return (1);
 	}
 
