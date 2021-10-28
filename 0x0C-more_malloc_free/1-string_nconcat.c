@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * string_nconcat - function that concatenates two strings
  * wich contains s1 followed by the first n bytes of s2
@@ -9,7 +8,6 @@
  * @n: number of first bytes to concatenate
  * Return: returns the pointer to the allocated memory
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *pointer;
@@ -18,18 +16,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL)
 		i = 0;
 	else
-		while (s1[i] != '\0')
-		{
-			i++;
-		}
-
+		for (i = 0; s1[i]; i++)
+			;
 	if (s2 == NULL)
 		j = 0;
 	else
-		while (s2[j] != '\0')
-		{
-			j++;
-		}
+		for (j = 0; s2[j]; j++)
+			;
 	if (n >= j)
 		n = j;
 	pointer = malloc(sizeof(char) * (i + n + 1));
