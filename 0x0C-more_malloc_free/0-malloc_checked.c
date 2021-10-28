@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * malloc_checked - function that allocates memory using malloc
- * @pointer: pointer to return
  * @b: parameter with the amount of memory to allocate
  * Return: returns the pointer to the allocated memory
  */
