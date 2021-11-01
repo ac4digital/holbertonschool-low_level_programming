@@ -5,7 +5,7 @@
  * struct dog - description about struct dog
  * @name: name of the dog, pointer to char
  * @age: age of the dog, float
- * #owner: owner of the dog, pointer to char
+ * @owner: owner of the dog, pointer to char
  */
 struct dog {
 	char *name;
