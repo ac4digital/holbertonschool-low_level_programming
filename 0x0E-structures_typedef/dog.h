@@ -7,7 +7,8 @@
  * @age: age of the dog, float
  * @owner: owner of the dog, pointer to char
  */
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
