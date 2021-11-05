@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
 	if (f == NULL)
 	{
-		printf("Error de Puntero\n");
+		printf("Error\n");
 		exit(99);
 	}
 
