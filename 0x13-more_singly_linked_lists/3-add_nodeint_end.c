@@ -1,14 +1,12 @@
 #include "lists.h"
-#include <stddef.h>
 
 /**
- * *add_nodeint_end - function that adds a new node at the end of
- * a singly linked list.
- * @head: pointer to the head of the singly linked list
- * @n: number to add to the new node
- * Return: the address of the new node or NULL if failed
+ * add_nodeint_end - function that adds a new node at the end of a
+ * linked list
+ * @head: pointer to the head of a linked list
+ * @n: number to add in the node
+ * Return: the address of the new element, or NULL if it failed
  */
-
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new, *prev;
@@ -18,6 +16,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	if (new == NULL)
 		return (NULL);
 
+	new->n = n;
+	new->next = NULL;
+
 	if (*head == NULL)
 	{
 		*head = new;
@@ -25,15 +26,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 
 	prev = *head;
-
 	while (prev->next != NULL)
-	{
 		prev = prev->next;
-	}
 
-	new->n = n;
-	new->next = NULL;
 	prev->next = new;
-
 	return (new);
 }
