@@ -10,16 +10,16 @@
 int sum_listint(listint_t *head)
 {
 	listint_t *p_head = head;
-	int count = 0;
+	int sum = 0;
 
 	if (p_head == NULL)
 		return (0);
 
 	while (p_head != NULL)
 	{
-		count += p_head->n;
+		sum += p_head->n;
 		p_head = p_head->next;
 	}
-	return (count);
+	return (sum);
 
 }
