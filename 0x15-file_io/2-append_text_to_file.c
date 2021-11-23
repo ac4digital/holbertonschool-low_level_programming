@@ -37,7 +37,6 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (res_write < 0)
 	{
-		write(STDOUT_FILENO, "File can't be created", 21);
 		return (-1);
 	}
 
