@@ -4,8 +4,6 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-
-
 /**
  * append_text_to_file - function that appends text at the end of a file
  * @filename: name of the file
@@ -13,10 +11,10 @@
  * Return: 1 Success or -1 if fail
  */
 
-
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd, res_write, length = 0;
+	int fd, length = 0;
+	ssize_t res_write;
 
 	if (filename == NULL)
 		return (-1);
@@ -39,7 +37,6 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (res_write < 0)
 	{
-		close(fd);
 		write(STDOUT_FILENO, "File can't be created", 21);
 		return (-1);
 	}
