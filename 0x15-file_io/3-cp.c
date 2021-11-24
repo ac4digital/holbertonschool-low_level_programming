@@ -37,7 +37,7 @@ int main(int argc, const char *argv[])
 	{
 		if (b_read < 0)
 			close(fd_in), close(fd_out), exit(98);
-		
+
 		if (write(fd_out, buffer, b_read) < 0)
 			close(fd_in), close(fd_out), exit(99);
 	}
