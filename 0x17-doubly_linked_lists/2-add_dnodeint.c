@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * add_dnodeint - function that adds a new node at the beginning of the linked list
+ * add_dnodeint - function that adds a new node at the head
+ * of the linked list
  * @head: double pointer to the head of the linked list
  * @n: value to add to the new node
  *
